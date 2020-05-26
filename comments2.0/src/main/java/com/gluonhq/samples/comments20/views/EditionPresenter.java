@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016, 2018 Gluon
+ * Copyright (c) 2016, 2020 Gluon
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -24,7 +24,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.gluonhq.comments20.views;
+package com.gluonhq.samples.comments20.views;
 
 import com.gluonhq.attach.display.DisplayService;
 import com.gluonhq.charm.glisten.afterburner.GluonPresenter;
@@ -33,9 +33,9 @@ import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.control.Avatar;
 import com.gluonhq.charm.glisten.mvc.View;
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
-import com.gluonhq.comments20.Comments20;
-import com.gluonhq.comments20.cloud.Service;
-import com.gluonhq.comments20.model.Comment;
+import com.gluonhq.samples.comments20.Comments20;
+import com.gluonhq.samples.comments20.cloud.Service;
+import com.gluonhq.samples.comments20.model.Comment;
 import javafx.beans.binding.Bindings;
 import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;

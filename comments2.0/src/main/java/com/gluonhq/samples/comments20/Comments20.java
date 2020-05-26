@@ -24,11 +24,12 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.gluonhq.comments20;
+package com.gluonhq.samples.comments20;
 
 import com.gluonhq.charm.glisten.application.MobileApplication;
 import com.gluonhq.charm.glisten.visual.Swatch;
-import com.gluonhq.comments20.views.AppViewManager;
+import com.gluonhq.samples.comments20.cloud.Service;
+import com.gluonhq.samples.comments20.views.AppViewManager;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -47,6 +48,10 @@ public class Comments20 extends MobileApplication {
         scene.getStylesheets().add(Comments20.class.getResource("style.css").toExternalForm());
         
         ((Stage) scene.getWindow()).getIcons().add(new Image(Comments20.class.getResourceAsStream("/icon.png")));
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
     
 }

@@ -24,7 +24,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.gluonhq.comments20.cloud;
+package com.gluonhq.samples.comments20.cloud;
 
 import com.gluonhq.attach.util.Services;
 import com.gluonhq.attach.cache.Cache;
@@ -34,7 +34,7 @@ import com.gluonhq.cloudlink.client.data.DataClientBuilder;
 import com.gluonhq.cloudlink.client.data.SyncFlag;
 import com.gluonhq.cloudlink.client.user.User;
 import com.gluonhq.cloudlink.client.user.UserClient;
-import com.gluonhq.comments20.model.Comment;
+import com.gluonhq.samples.comments20.model.Comment;
 import com.gluonhq.connect.GluonObservableList;
 import com.gluonhq.connect.ConnectState;
 import com.gluonhq.connect.provider.DataProvider;

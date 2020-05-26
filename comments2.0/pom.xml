@@ -17,7 +17,7 @@
         <client.plugin.version>0.1.26-SNAPSHOT</client.plugin.version>
         <charm.version>6.0.4</charm.version>
         <attach.version>4.0.8-SNAPSHOT</attach.version>
-        <mainClassName>com.gluonhq.comments20.Comments20</mainClassName>
+        <mainClassName>com.gluonhq.samples.comments20.Comments20</mainClassName>
     </properties>
 
     <dependencies>
@@ -29,6 +29,11 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-web</artifactId>
             <version>${javafx.version}</version>
         </dependency>
         <dependency>
@@ -86,6 +91,12 @@
             <artifactId>jakarta.json</artifactId>
             <version>1.1.5</version>
             <classifier>module</classifier>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>2.3.1</version>
             <scope>runtime</scope>
         </dependency>
     </dependencies>
@@ -164,11 +175,19 @@
                         <list>storage</list>
                         <list>cache</list>
                     </attachList>
+                    <reflectionList>
+                        <list>com.gluonhq.samples.comments20.cloud.Service</list>
+                        <list>com.gluonhq.samples.comments20.views.AppViewManager</list>
+                        <list>com.gluonhq.samples.comments20.views.CommentsPresenter</list>
+                        <list>com.gluonhq.samples.comments20.views.EditionPresenter</list>
+                        <list>com.gluonhq.impl.charm.glisten.connect.view.GlistenAuthenticationView</list>
+                        <list>com.gluonhq.impl.charm.glisten.connect.view.NetworkConnectView</list>
+                    </reflectionList>
                     <!-- Uncomment to run on iOS: -->
                     <!-- <target>ios</target> -->
                     <!-- <target>android</target> -->
                     <mainClass>${mainClassName}</mainClass>
-<verbose>false</verbose>
+<verbose>true</verbose>
                 </configuration>
             </plugin>
 

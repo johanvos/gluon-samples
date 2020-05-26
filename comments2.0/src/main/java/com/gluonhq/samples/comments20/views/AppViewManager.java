@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, 2018 Gluon
+ * Copyright (c) 2017, 2020 Gluon
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -24,7 +24,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.gluonhq.comments20.views;
+package com.gluonhq.samples.comments20.views;
 
 import com.airhacks.afterburner.injection.Injector;
 import com.gluonhq.attach.display.DisplayService;
@@ -36,7 +36,7 @@ import com.gluonhq.charm.glisten.application.MobileApplication;
 import com.gluonhq.charm.glisten.control.Avatar;
 import com.gluonhq.charm.glisten.control.NavigationDrawer;
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
-import com.gluonhq.comments20.cloud.Service;
+import com.gluonhq.samples.comments20.cloud.Service;
 import javafx.scene.Node;
 import javafx.scene.image.Image;
 
